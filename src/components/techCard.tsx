@@ -83,7 +83,8 @@ const TechCard = ({ tech, selected, setSelectedCard }: PropsTech) => {
                     </div>
 
                     {/* Button */}
-                    <button className="btn w-full rounded bg-black text-white hover:bg-gray-800" disabled={alreadySelected} onClick={() => stackHandler(tech)}>
+                    <button className="btn w-full rounded bg-black text-white hover:bg-gray-800
+                    disabled:bg-gray-300 disabled:text-white disabled:cursor-not-allowed " disabled={alreadySelected} onClick={() => stackHandler(tech)}>
                        
                        {/* What a syle bro!! */}
                         {
