@@ -140,13 +140,15 @@
         "badge": "Essential"
     },
     {
-        "id": "vscode",
-        "name": "VS Code",
-        "category": "Tools",
-        "description": "A lightweight and extensible source code editor with powerful development and debugging features.",
-        "icon": "https://icon.icepanel.io/Technology/svg/Visual-Studio-Code.svg",
-        "rating": 4.9,
-        "difficulty": "Beginner-Friendly",
-        "badge": "Popular"
+        
+            "id": "svelte",
+            "name": "Svelte",
+            "category": "Frontend",
+            "description": "A modern frontend framework that shifts much of the work into the build step for fast and lightweight web applications.",
+            "icon": "https://cdn.simpleicons.org/svelte",
+            "rating": 4.7,
+            "difficulty": "Intermediate",
+            "badge": "Rising"
+        
     }
 ]

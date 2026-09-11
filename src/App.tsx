@@ -17,6 +17,7 @@ const ItemFetch = async (): Promise<TechTypes[]> => {
 
 function App() {
   const [techPromise] = useState(() => ItemFetch());
+  const [selected, setSelectedCard] =  useState<TechTypes[]>([])
 
   return (
     <>
@@ -26,7 +27,12 @@ function App() {
         <ExploreSide />
         <Suspense fallback={<h2>Loading...</h2>}>
           <AvailableStacks
-            techPromise={techPromise} />
+            techPromise={techPromise}
+              selected={selected}
+            setSelectedCard={setSelectedCard}
+             />
+
+          
         </Suspense>
         <Footer />
 
