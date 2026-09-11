@@ -1,6 +1,8 @@
 import { toast } from 'react-toastify'
 import type { TechTypes } from '../types/types'
 import { FaStar } from 'react-icons/fa'
+import SelectedTechnology from './SelectedTechnology'
+// import SelectedTechnology from './SelectedTechnology'
 
 interface PropsTech {
     tech: TechTypes
@@ -32,7 +34,7 @@ const TechCard = ({ tech, selected, setSelectedCard }: PropsTech) => {
 
     }
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 flex ">
             {/* card designed */}
             <div className="card bg-base-100 w-96 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
 
@@ -96,23 +98,6 @@ const TechCard = ({ tech, selected, setSelectedCard }: PropsTech) => {
                 </div>
             </div>
 
-            {/* your stack */}
-            {/* <div>
-                <div className="card bg-base-100 w-96 shadow-sm">
-                    <figure>
-                        <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                        <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
 
         </div>
     )

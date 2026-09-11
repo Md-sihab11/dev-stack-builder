@@ -147,7 +147,7 @@
             "description": "A modern frontend framework that shifts much of the work into the build step for fast and lightweight web applications.",
             "icon": "https://cdn.simpleicons.org/svelte",
             "rating": 4.7,
-            "difficulty": "Intermediate",
+            "difficulty": "Advanced",
             "badge": "Rising"
         
     }
