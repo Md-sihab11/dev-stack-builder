@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './components/navbar'
 import Banner from './components/banner'
 import ExploreSide from './components/ExploreSide'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 import AvailableStacks from './components/availableStacks'
 import type { TechTypes } from './types/types'
 
@@ -28,7 +28,7 @@ function App() {
           <AvailableStacks
             techPromise={techPromise} />
         </Suspense>
-
+        <Footer />
 
       </div>
     </>
