@@ -1,5 +1,6 @@
 import React from 'react';
 import type { TechTypes } from '../types/types';
+import { ImCross } from "react-icons/im";
 
 interface Props {
     tech: TechTypes
@@ -42,9 +43,11 @@ const SelectedTechnology = ({
 
             <button
                 onClick={removeHandler}
-                className="btn btn-sm btn-circle btn-ghost text-red-500"
+                className="btn btn-sm btn-circle btn-ghost "
             >
-                ✕
+                {/* <RxCross1 /> */}
+
+                <ImCross />
             </button>
 
         </div>

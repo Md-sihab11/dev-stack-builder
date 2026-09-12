@@ -14,9 +14,9 @@ const AvailableStacks = ({ techPromise, selected, setSelectedCard }: TechProps) 
     const techStacks = use(techPromise)
 
     return (
-        <div className=" flex gap-5 justify-between container mx-auto  space-y-5 pt-10">
+        <div className=" container mx-auto flex justify-between gap-6 space-y-40 pt-15 -pb-2 items-start">
 
-            <div className="grid grid-cols-3">
+            <div className="grid grid-cols-3 gap-5 space-x-2 space-y-2">
                 {techStacks.map((tech) => (
                     <TechCard
                         key={tech.id}
@@ -29,7 +29,7 @@ const AvailableStacks = ({ techPromise, selected, setSelectedCard }: TechProps) 
 
             {/* ------------------------------------------------------------ */}
 
-            <div className="card bg-base-100 w-96 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg h-[200px] p-5">
+            <div className="card bg-base-100 w-96 shadow-sm p-5">
                 <div>
                     <h2 className="font-bold text-2xl text-center">
                         Your Stack
@@ -39,25 +39,35 @@ const AvailableStacks = ({ techPromise, selected, setSelectedCard }: TechProps) 
                 </div>
 
                 {/* Selected technologies */}
-                <div className="mt-5 space-y-3">
+                <div className="mt-1 space-y-3">
                     {selected.length === 0 ? (
-                        <div className="border border-gray-200 rounded-xl p-6 text-center bg-gray-50">
-                            <p className="text-gray-500 text-center">
+                        <div >
+
+                            <p className="text-gray-500 text-center mb-3">
                                 No Technology Selected Yet
                             </p>
-                            <p className="text-gray-400">
-                                Your Stack is empty.
-                            </p>
+                            <div className="border border-dashed border-gray-300 rounded-xl p-6 text-center">
+
+                                <p className="text-gray-400">
+                                    Your Stack is empty.
+                                </p>
+                            </div>
                         </div>
+
                     ) : (
-                        selected.map((tech) => (
-                            <SelectedTechnology
-                                key={tech.id}
-                                tech={tech}
-                                selected={selected}
-                                setSelectedCard={setSelectedCard}
-                            />
-                        ))
+
+                        <div className="space-y-3 mt-4">
+                            
+                            <p className="text-gray-500 text-center">{selected.length} Technology Selected</p>
+                            {selected.map((tech) => (
+                                <SelectedTechnology
+                                    key={tech.id}
+                                    tech={tech}
+                                    selected={selected}
+                                    setSelectedCard={setSelectedCard}
+                                />
+                            ))}
+                        </div>
                     )}
                 </div>
 

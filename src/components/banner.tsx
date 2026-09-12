@@ -23,9 +23,12 @@ const Banner = () => {
 
         {/* Buttons */}
         <div className="flex gap-5">
-          <button className="rounded-full border-0 bg-linear-to-r from-purple-500 to-pink-500 px-6 py-3 font-semibold text-white transition-all hover:from-purple-600 hover:to-pink-600 hover:shadow-lg">
+          <a
+            href="#"
+            className="inline-block rounded-full border-0 bg-linear-to-r from-purple-500 to-pink-500 px-6 py-3 font-semibold text-white transition-all hover:from-purple-600 hover:to-pink-600 hover:shadow-lg"
+          >
             Explore Technologies
-          </button>
+          </a>
 
           <button className="w-[140px] cursor-pointer rounded-full border border-gray-200 px-4 py-3 transition-all hover:border-purple-400 hover:text-purple-500">
             Learn More

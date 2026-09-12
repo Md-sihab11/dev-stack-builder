@@ -9,7 +9,7 @@ import type { TechTypes } from './types/types'
 
 const ItemFetch = async (): Promise<TechTypes[]> => {
 
-  await new Promise(resolve => setTimeout(resolve, 1000));
+  await new Promise(resolve => setTimeout(resolve, 100));
   const response = await fetch('../data.json');
   const data = await response.json();
   return data;
@@ -35,8 +35,6 @@ function App() {
             selected={selected}
             setSelectedCard={setSelectedCard}
           />
-
-
         </Suspense>
         <Footer />
 

@@ -1,8 +1,7 @@
 import { toast } from 'react-toastify'
 import type { TechTypes } from '../types/types'
 import { FaStar } from 'react-icons/fa'
-import SelectedTechnology from './SelectedTechnology'
-// import SelectedTechnology from './SelectedTechnology'
+
 
 interface PropsTech {
     tech: TechTypes
@@ -26,15 +25,18 @@ const TechCard = ({ tech, selected, setSelectedCard }: PropsTech) => {
        
 
         if (alreadySelected) {
+            toast.error(`${tech.name} is already selected!`);
             return;
         }
 
         setSelectedCard((prev)=>[...prev, tech])
+
+    
         toast.success(`You have added ${tech.name}`);
 
     }
     return (
-        <div className="space-y-4 flex ">
+        <div className="space-y-4 flex flex-cols-1 md:flex-cols-2 lg:flex-cols-3">
             {/* card designed */}
             <div className="card bg-base-100 w-96 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
 
@@ -90,7 +92,7 @@ const TechCard = ({ tech, selected, setSelectedCard }: PropsTech) => {
                        
                        {/* What a syle bro!! */}
                         {
-                            alreadySelected? "Selected": "Add to Stack"
+                            alreadySelected? "✓ Added to Stack": "Add to Stack"
                         }
 
                     </button>
