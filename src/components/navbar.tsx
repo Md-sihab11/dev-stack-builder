@@ -15,7 +15,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav>
+        <nav className="sticky top-0 z-50 bg-white">
             <div className=" container mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* ================= MOBILE / TABLET ================= */}
