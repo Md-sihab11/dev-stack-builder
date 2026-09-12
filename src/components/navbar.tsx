@@ -16,7 +16,7 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className=" container mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* ================= MOBILE / TABLET ================= */}
                 <div className="md:hidden"> 
@@ -58,14 +58,14 @@ const Navbar = () => {
                         <img
                             src={img}
                             alt="DevStack Logo"
-                            className="absolute left-43 w-32 -translate-x-1/2 sm:w-36"
+                            className="relative left-43 w-32 -translate-x-1/2 sm:w-36"
                         />
 
                         {/* Auth Buttons */}
                         <div className="ml-auto flex items-center gap-1 sm:gap-2">
                             <button
                                 type="button"
-                                className="btn btn-sm rounded-full border-0 bg-transparent px-2 sm:px-3"
+                                className=" shadow-none btn btn-sm rounded-full border-0 bg-transparent px-2 sm:px-3"
                             >
                                 Sign In
                             </button>
