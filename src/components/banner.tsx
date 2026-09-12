@@ -2,12 +2,12 @@ import IMG from '../assets/banner-stack.png'
 
 const Banner = () => {
   return (
-    <section className="container mx-auto flex min-h-[calc(100vh-390px)] items-center justify-between px-6">
+    <section className="container mx-auto flex min-h-[calc(100vh-390px)] flex-col items-center justify-center gap-10 px-6 py-12 md:gap-12 lg:flex-row lg:justify-between lg:py-0">
 
       {/* Text */}
-      <div className="flex flex-col gap-8">
+      <div className="flex w-full flex-col gap-6 text-center lg:w-1/2 lg:gap-8 lg:text-left">
 
-        <h1 className="text-5xl font-bold leading-tight text-black lg:text-6xl">
+        <h1 className="text-4xl font-bold leading-tight text-black sm:text-5xl lg:text-6xl">
           Build Your Ideal
           <br />
           <span className="bg-linear-to-r from-purple-700 to-pink-500 bg-clip-text text-transparent">
@@ -15,34 +15,37 @@ const Banner = () => {
           </span>
         </h1>
 
-        <p className="max-w-xl text-gray-600">
+        <p className="mx-auto max-w-xl text-sm leading-6 text-gray-600 sm:text-base lg:mx-0">
           Explore frontend, backend, database, and tooling options,
           compare them side by side, and put together the stack that fits
           your next project.
         </p>
 
         {/* Buttons */}
-        <div className="flex gap-5">
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+
           <a
             href="#"
-            className="inline-block rounded-full border-0 bg-linear-to-r from-purple-500 to-pink-500 px-6 py-3 font-semibold text-white transition-all hover:from-purple-600 hover:to-pink-600 hover:shadow-lg"
+            className="w-full rounded-full bg-linear-to-r from-purple-500 to-pink-500 px-6 py-3 text-center font-semibold text-white transition-all hover:from-purple-600 hover:to-pink-600 hover:shadow-lg sm:w-auto"
           >
             Explore Technologies
           </a>
 
-          <button className="w-[140px] cursor-pointer rounded-full border border-gray-200 px-4 py-3 transition-all hover:border-purple-400 hover:text-purple-500">
+          <button
+            className="w-full cursor-pointer rounded-full border border-gray-200 px-6 py-3 transition-all hover:border-purple-400 hover:text-purple-500 sm:w-[140px]"
+          >
             Learn More
           </button>
-        </div>
 
+        </div>
       </div>
 
       {/* Image */}
-      <div>
+      <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
         <img
           src={IMG}
           alt="Development stack"
-          className="w-[500px]"
+          className="w-full max-w-[350px] sm:max-w-[420px] lg:max-w-[500px]"
         />
       </div>
 
@@ -51,4 +54,3 @@ const Banner = () => {
 }
 
 export default Banner
-

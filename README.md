@@ -1,32 +1,44 @@
-# React + TypeScript + Vite
+# B14-A05-DevStack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive React-based Dev Stack Builder where users can explore different technologies and build their own personalized technology stack.
 
-Currently, two official plugins are available:
+## 🚀 Live Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Live Link: Add your live website link here
+- GitHub Repository: Add your GitHub repository link here
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- TypeScript
+- Tailwind CSS
+- DaisyUI
+- React-Toastify
+- JSON
+- Vite
 
-## Expanding the Oxlint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+1. **Explore Technologies**
+   - Users can browse different technologies with their icon, category, difficulty, rating, and description.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+2. **Build Your Own Stack**
+   - Users can add technologies to their personal stack.
+   - Duplicate technologies cannot be added.
+   - Selected technologies can be removed individually or all at once.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+3. **Responsive & Interactive UI**
+   - The website works on desktop, tablet, and mobile devices.
+   - Toast notifications are shown when technologies are added or removed.
+
+---
+
+# 📚 React Questions & Answers
+
+## 1. What is JSX, and why is it used in React?
+
+JSX stands for JavaScript XML. It allows us to write HTML-like code inside JavaScript or TypeScript.
+
+It makes React components easier to write and understand because we can describe the UI directly inside our code.
+
+---
