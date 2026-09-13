@@ -58,21 +58,21 @@ const Navbar = () => {
                         <img
                             src={img}
                             alt="DevStack Logo"
-                            className="relative left-43 w-32 -translate-x-1/2 sm:w-36"
+                            className="absolute left-1/2 w-25 -translate-x-1/2 sm:w-35 lg:w-36"
                         />
 
                         {/* Auth Buttons */}
-                        <div className="ml-auto flex items-center gap-1 sm:gap-2">
+                        <div className="ml-auto flex items-center gap-1 sm:gap-2 ">
                             <button
                                 type="button"
-                                className=" shadow-none btn btn-sm rounded-full border-0 bg-transparent px-2 sm:px-3"
+                                className=" shadow-none btn btn-sm rounded-full border-0 bg-transparent px-1 sm:px-3"
                             >
                                 Sign In
                             </button>
 
                             <button
                                 type="button"
-                                className="btn btn-sm rounded-full border border-[#D91B7E] bg-[#D91B7E] px-3 text-white hover:bg-[#c51870]"
+                                className="btn btn-sm rounded-full border border-[#D91B7E] bg-[#D91B7E] px-1 text-white hover:bg-[#c51870]"
                             >
                                 Sign Up
                             </button>
