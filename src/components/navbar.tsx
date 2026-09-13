@@ -58,7 +58,7 @@ const Navbar = () => {
                         <img
                             src={img}
                             alt="DevStack Logo"
-                            className="absolute left-1/2 w-25 -translate-x-1/2 sm:w-35 lg:w-36"
+                            className="absolute left-[46%] w-25 -translate-x-1/2 sm:w-35 lg:w-36"
                         />
 
                         {/* Auth Buttons */}
