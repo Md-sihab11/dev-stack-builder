@@ -4,8 +4,8 @@ A responsive React-based Dev Stack Builder where users can explore different tec
 
 ## 🚀 Live Project
 
-- Live Link: Add your live website link here
-- GitHub Repository: Add your GitHub repository link here
+- Live Link: [DevStack-Builder](https://devstackb.netlify.app/)
+
 ## 📁 Project Structure 
 
 ```text
