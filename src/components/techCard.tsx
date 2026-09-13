@@ -2,6 +2,7 @@
 import { toast } from 'react-toastify'
 import type { TechTypes } from '../types/types'
 import { FaStar } from 'react-icons/fa'
+import { Bounce } from 'react-toastify/unstyled'
 
 interface PropsTech {
   tech: TechTypes
@@ -27,7 +28,18 @@ const TechCard = ({
 
     setSelectedCard((prev) => [...prev, tech])
 
-    toast.success(`You have added ${tech.name}`)
+    // toast.success()
+    toast.success(`You have added ${tech.name}`, {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
   }
 
   return (

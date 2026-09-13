@@ -26,7 +26,7 @@ const Banner = () => {
 
           <a
             href="#"
-            className="flex-1 whitespace-nowrap rounded-full bg-linear-to-r from-purple-500 to-pink-500 px-3 py-2 text-center text-sm font-semibold text-white transition-all hover:from-purple-600 hover:to-pink-600 md:flex-none md:px-6 md:py-3 md:text-base"
+            className="flex-1 whitespace-nowrap rounded-full gradient  px-3 py-2 text-center text-sm font-semibold text-white transition-all hover:from-purple-600 hover:to-pink-600 md:flex-none md:px-6 md:py-3 md:text-base"
           >
             Explore Technologies
           </a>

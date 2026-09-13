@@ -1,2 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+@layer components {
+    .gradient {
+        background: linear-gradient(to right, #f97316, #ec4899, #8b5cf6);
+    }
+}
