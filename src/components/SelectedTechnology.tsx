@@ -4,13 +4,11 @@ import { ImCross } from "react-icons/im";
 
 interface Props {
     tech: TechTypes
-    selected: TechTypes[]
     setSelectedCard: React.Dispatch<React.SetStateAction<TechTypes[]>>
 }
 
 const SelectedTechnology = ({
     tech,
-    selected,
     setSelectedCard
 }: Props) => {
 

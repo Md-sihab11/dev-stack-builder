@@ -77,7 +77,6 @@ const AvailableStacks = ({ techPromise, selected, setSelectedCard }: TechProps) 
                                         <SelectedTechnology
                                             key={tech.id}
                                             tech={tech}
-                                            selected={selected}
                                             setSelectedCard={setSelectedCard}
                                         />
                                     ))}
