@@ -26,19 +26,21 @@ const Footer = () => {
             <a href="#" className="hover:text-purple-500">
               GitHub
             </a>
-
+          <p className="text-gray-500 block sm:hidden md:hidden">•</p>
             <a href="#" className="hover:text-purple-500">
-              Twitter
+            Twitter
             </a>
 
+            <p className="text-gray-500 block sm:hidden">•</p>
+          
             <a href="#" className="hover:text-purple-500">
-              LinkedIn
+            LinkedIn
             </a>
           </div>
         </div>
 
         {/* Product */}
-        <div>
+        <div className="hidden lg:block">
           <h2 className="text-center lg:text-left mb-4 font-semibold uppercase">
             Product
           </h2>
@@ -63,7 +65,7 @@ const Footer = () => {
         </div>
 
         {/* Company */}
-        <div>
+        <div className="hidden lg:block">
           <h2 className=" text-center lg:text-left mb-4 font-semibold">
             Company
           </h2>
@@ -88,7 +90,7 @@ const Footer = () => {
         </div>
 
         {/* Legal */}
-        <div>
+        <div className="hidden lg:block">
           <h2 className="text-center lg:text-left mb-4 font-semibold">
             Legal
           </h2>

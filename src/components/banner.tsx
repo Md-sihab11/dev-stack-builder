@@ -22,20 +22,20 @@ const Banner = () => {
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+        <div className="flex flex-row justify-center items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
 
           <a
             href="#"
-            className="w-full rounded-full bg-linear-to-r from-purple-500 to-pink-500 px-6 py-3 text-center font-semibold text-white transition-all hover:from-purple-600 hover:to-pink-600 hover:shadow-lg sm:w-auto"
+            className="flex-1 whitespace-nowrap rounded-full bg-linear-to-r from-purple-500 to-pink-500 px-3 py-2 text-center text-sm font-semibold text-white transition-all hover:from-purple-600 hover:to-pink-600 md:flex-none md:px-6 md:py-3 md:text-base"
           >
             Explore Technologies
           </a>
 
-          <button
-            className="w-full cursor-pointer rounded-full border border-gray-200 px-6 py-3 transition-all hover:border-purple-400 hover:text-purple-500 sm:w-[140px]"
+          <a
+            className="flex-1 whitespace-nowrap rounded-full border border-gray-200 px-3 py-2 text-center text-sm transition-all hover:border-purple-400 hover:text-purple-500 md:flex-none md:px-6 md:py-3 md:text-base"
           >
             Learn More
-          </button>
+          </a>
 
         </div>
       </div>
@@ -45,7 +45,7 @@ const Banner = () => {
         <img
           src={IMG}
           alt="Development stack"
-          className="w-full max-w-[350px] sm:max-w-[420px] lg:max-w-[500px]"
+          className="w-full max-w-87.5 sm:max-w-105 lg:max-w-125"
         />
       </div>
 
